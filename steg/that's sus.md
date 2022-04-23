@@ -8,4 +8,4 @@ On listening to the audio file, you get a among us tune following a noisy sound.
 
 On adjusting the aspect ratio of the window, the flag is easily readable.
 
-flag: `wannahack{sp3CTrograM_S0unds_COO1}`
+Flag: `wannahack{sp3CTrograM_S0unds_COO1}`
