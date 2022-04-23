@@ -15,12 +15,6 @@ On inputting a random flag, we are given the hint to look for C# compilers. On g
 Double clicking on main, we see the following code:
 
 ```C#
-// Decompiled with JetBrains decompiler
-// Type: hehe.Program
-// Assembly: kit_kat, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-// MVID: 9BD12848-EFC8-41A8-AB8C-158C5758ED21
-// Assembly location: C:\Users\Adrito Mukherjee\ctf\cops\kitkat\kitkat.exe
-
 using System;
 using System.Text;
 
