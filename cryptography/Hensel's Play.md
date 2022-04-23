@@ -53,7 +53,7 @@ Now `n` is <img src="https://render.githubusercontent.com/render/math?math=\colo
 
 You can read about the lemma [here](https://brilliant.org/wiki/hensels-lemma/).
 
-Once we understand the math, we can write a scipt to do the solving for us.
+Once we understand the math, we can write a script to do the solving for us.
 
 ```python
 # Constants
