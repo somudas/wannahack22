@@ -44,7 +44,7 @@ Using base64 decryption, we get the flag `wannahack{4_byt3_51z3d_pr0b13m}`
 ### Challenge
 `more primes in the modulus must mean more secure, right ?`
 `manyprimes_chall.txt`
-```
+```python
 n = 2022339071327756968883596318493908023847053752173419446485415703324621502881532573796226152882444269092997362329621
 e = 65537
 ct = 271516688742662432269771245062373657262419146832050884999507573022291453014311240924133634342380857121598480169040
@@ -57,7 +57,7 @@ We can subsequently use `Dcode` to perform a prime decomposition attack on this 
 2022339071327756968883596318493908023847053752173419446485415703324621502881532573796226152882444269092997362329621 (115 digits) = 9282105380008121879 × 9303850685953812323 × 9389357739583927789 × 10336650220878499841 × 14278240802299816541 × 16898740504023346457
 ```
 Using these factors, and reading a bit about the decrpytion of multi-prime RSA online, we can write a simple Python program to do the decrpytion for us.
-```
+```python
 from  Crypto.Util.number  import  inverse
 
 n = 022339071327756968883596318493908023847053752173419446485415703324621502881532573796226152882444269092997362329621
@@ -109,7 +109,7 @@ We can see the flag is on the last line of the paragraph `wannahack{5t@t15t1cs_4
 ## Hensel's Play
 `You always grow step by step`
 
-```
+```python
 chall2.py
 from  Crypto.Util.number  import  getPrime, getRandomNBitInteger
 
@@ -154,7 +154,7 @@ We can use brute force to find out the solution to the given equation <img src="
 You can read about the lemma  [here](https://brilliant.org/wiki/hensels-lemma/).
 
 Once we understand the math, we can write a scipt to do the solving for us.
-```
+```python
 # Constants
 a=28474817368230834312853997813442489026844211253473136330164513204841204736491286784438800779030488935977138770949952
 b=25155249942342753320469293072112206447021896294792542826955283004156685182316769330168679422916128917890156702411390
