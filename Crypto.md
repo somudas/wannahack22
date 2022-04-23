@@ -149,7 +149,7 @@ This is beneficial for us, as in the question we are also given the ciphertext. 
 - In the question, instead of providing us with p, we are given the value of the expression <img src="https://render.githubusercontent.com/render/math?math=p^2 - ap + b"> when taken modulo <img src="https://render.githubusercontent.com/render/math?math=5^{166}">.
 - Thus we can formulate the task at hand to be solving the problem of finding the root of the equation <img src="https://render.githubusercontent.com/render/math?math={x}^{2} - ax + b - rem = 0 \mod n"> where <img src="https://render.githubusercontent.com/render/math?math=n = 5^{166}">
  
-We can use brute force to find out the solution to the given equation $\mod 5^1$ and then subsequently use Hensel's Lifting Lemma to raise the corresponding root with respect to <img src="https://render.githubusercontent.com/render/math?math=\mod 5^k, k= 2,3,4....."> in a linear manner.
+We can use brute force to find out the solution to the given equation <img src="https://render.githubusercontent.com/render/math?math=\mod 5^1"> and then subsequently use Hensel's Lifting Lemma to raise the corresponding root with respect to <img src="https://render.githubusercontent.com/render/math?math=\mod 5^k, k= 2,3,4....."> in a linear manner.
 
 You can read about the lemma  [here](https://brilliant.org/wiki/hensels-lemma/).
 
