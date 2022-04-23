@@ -14,7 +14,34 @@ On inputting a random flag, we are given the hint to look for C# compilers. On g
 
 Double clicking on main, we see the following code:
 
-![image](https://user-images.githubusercontent.com/98008131/164889933-d4035c14-bb24-4e3e-a40e-14109eb5ae35.png)
+```C#
+// Decompiled with JetBrains decompiler
+// Type: hehe.Program
+// Assembly: kit_kat, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+// MVID: 9BD12848-EFC8-41A8-AB8C-158C5758ED21
+// Assembly location: C:\Users\Adrito Mukherjee\ctf\cops\kitkat\kitkat.exe
+
+using System;
+using System.Text;
+
+namespace hehe
+{
+  internal class Program
+  {
+    private static void Main(string[] args)
+    {
+      Console.WriteLine("Hello World! hehe");
+      Console.WriteLine("Can i get the secret flag : ");
+      if (Convert.ToBase64String(Encoding.UTF8.GetBytes(Console.ReadLine())).Equals("d2FubmFoYWNre0FfVHIxYTFfZm9SX2MwTUI0VH0="))
+        Console.WriteLine("\n\nGood Flag kiddo! \nNow submit this to gain points.");
+      else
+        Console.WriteLine("\n\nWrong Flag! \nHint: C# decompilers can be useful");
+      Console.In.Read();
+    }
+  }
+}
+
+```
 
 We see that the program actually takes the input checks if its base64 encoded value is `d2FubmFoYWNre0FfVHIxYTFfZm9SX2MwTUI0VH0=`. So we just go ahead and decode the base64 string.
 
