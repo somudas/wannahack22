@@ -1,4 +1,4 @@
-# Crytography
+# Cryptography
 
 ## Basic Encoding
 
@@ -100,7 +100,9 @@ We can then use `Dcode` to do a XOR brute force attack on this cyphertext, with 
 Doing so, we can see that for the key `6d346d6d345f6d3134 (hex)`, the decrpyted text makes sense.
 Performing a decrpytion with the same key, gives us the ciphertext to be equal to 
 
-`Cryptanalysis is the study of analyzing information systems in order to study the hidden aspects of the systems. Cryptanalysis is used to breach cryptographic security systems and gain access to the contents of encrypted messages, even if the cryptographic key is unknown.In addition to mathematical analysis of cryptographic algorithms, cryptanalysis includes the study of side-channel attacks that do not target weaknesses in the cryptographic algorithms themselves, but instead exploit weaknesses in their implementation.Even though the goal has been the same, the methods and techniques of cryptanalysis have changed drastically through the history of cryptography, adapting to increasing cryptographic complexity, ranging from the pen-and-paper methods of the past, through machines like the British Bombes and Colossus computers at Bletchley Park in World War II, to the mathematically advanced computerized schemes of the present. Methods for breaking modern cryptosystems often involve solving carefully constructed problems in pure mathematics, the best-known being integer factorization. By the way, the flag is , enclose it in the flag format. Attacks can be classified based on what type of information the attacker has available. As a basic starting point it is normally assumed that, for the purposes of analysis, the general algorithm is known, this is Shannon's Maxim , that the enemy knows the system in its turn, equivalent to Kerckhoffs' principle. This is a reasonable assumption in practice ,throughout history, there are countless examples of secret algorithms falling into wider knowledge, variously through espionage, betrayal and reverse engineering. wannahack{5t@t15t1cs_4r3_4ls0_1mp0rt4nt_31109877}`
+```
+Cryptanalysis is the study of analyzing information systems in order to study the hidden aspects of the systems. Cryptanalysis is used to breach cryptographic security systems and gain access to the contents of encrypted messages, even if the cryptographic key is unknown.In addition to mathematical analysis of cryptographic algorithms, cryptanalysis includes the study of side-channel attacks that do not target weaknesses in the cryptographic algorithms themselves, but instead exploit weaknesses in their implementation.Even though the goal has been the same, the methods and techniques of cryptanalysis have changed drastically through the history of cryptography, adapting to increasing cryptographic complexity, ranging from the pen-and-paper methods of the past, through machines like the British Bombes and Colossus computers at Bletchley Park in World War II, to the mathematically advanced computerized schemes of the present. Methods for breaking modern cryptosystems often involve solving carefully constructed problems in pure mathematics, the best-known being integer factorization. By the way, the flag is , enclose it in the flag format. Attacks can be classified based on what type of information the attacker has available. As a basic starting point it is normally assumed that, for the purposes of analysis, the general algorithm is known, this is Shannon's Maxim , that the enemy knows the system in its turn, equivalent to Kerckhoffs' principle. This is a reasonable assumption in practice ,throughout history, there are countless examples of secret algorithms falling into wider knowledge, variously through espionage, betrayal and reverse engineering. wannahack{5t@t15t1cs_4r3_4ls0_1mp0rt4nt_31109877}
+```
 
 We can see the flag is on the last line of the paragraph `wannahack{5t@t15t1cs_4r3_4ls0_1mp0rt4nt_31109877}`.
 
@@ -144,10 +146,10 @@ From the code, it is clear to us that that
 
 This is beneficial for us, as in the question we are also given the ciphertext. Due to the transitive property of XOR, to obtain the bytes of the flag, we just need to again take the XOR of the given ciphertext with the randomly generated number `p`.
 
-- In the question, instead of providing us with p, we are given the value of the expression $p^2 - ap + b$ when taken modulu $5^{166}$.
-- Thus we can formulate the task at hand to be solving the problem of finding the root of the equation $x^2 - ax + b - rem = 0 \mod n$  where $n = 5^{166}$
-
-We can use brute force to find out the solution to the given equation $\mod 5^1$ and then subsequently use Hensel's Lifting Lemma to raise the corresponding root with respect to $\mod 5^k, k= 2,3,4.....$ in a linear manner.
+- In the question, instead of providing us with p, we are given the value of the expression <img src="https://render.githubusercontent.com/render/math?math=p^2 - ap + b"> when taken modulo <img src="https://render.githubusercontent.com/render/math?math=5^{166}">.
+- Thus we can formulate the task at hand to be solving the problem of finding the root of the equation <img src="https://render.githubusercontent.com/render/math?math={x}^{2} - ax + b - rem = 0 \mod n"> where <img src="https://render.githubusercontent.com/render/math?math=n = 5^{166}">
+ 
+We can use brute force to find out the solution to the given equation $\mod 5^1$ and then subsequently use Hensel's Lifting Lemma to raise the corresponding root with respect to <img src="https://render.githubusercontent.com/render/math?math=\mod 5^k, k= 2,3,4....."> in a linear manner.
 
 You can read about the lemma  [here](https://brilliant.org/wiki/hensels-lemma/).
 
