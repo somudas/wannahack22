@@ -4,7 +4,11 @@ The problem statement goes like this:
 
 ![image](https://user-images.githubusercontent.com/98008131/164887944-66b09647-b371-4d27-9e62-7c1ae0b4a118.png)
 
-So we have a link to the actual page and also a download link for the source code. The question also hints us that we need to fiddle with the mongoDB database. Let us download the tar file and unzip it to see its contents. In the file `entrypoint.sh`, we see this bit of code:
+So we have a link to the actual page and also a download link for the source code. The question also hints us that we need to fiddle with the mongoDB database. On the website, we are asked a username and a password:
+
+![image](https://user-images.githubusercontent.com/98008131/164889475-94e36514-bd7b-4fc4-a289-5796c687e2a5.png)
+
+Let us download the tar file and unzip it to see its contents. In the file `entrypoint.sh`, we see this bit of code:
 
 ![image](https://user-images.githubusercontent.com/98008131/164888016-302383bc-91ac-4551-8fdb-2e27a12ade53.png)
 
@@ -53,3 +57,5 @@ Running the code, we brute force through every letter one by one until we finall
 ![image](https://user-images.githubusercontent.com/98008131/164888724-db6131b4-213f-4484-b1b2-d4eda5bdbf73.png)
 
 Tinkering with the output, we get that the flag is `wannahack{y0u_5u5t_H@ck3d_M0NG0_D5}`
+
+The following youtube video definitely helped in formulating the solution: https://www.youtube.com/watch?v=7kmttmmlygc
