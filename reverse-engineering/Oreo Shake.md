@@ -34,7 +34,7 @@ _start:
         ret
 ```
 
-I couldnt run with gcc or nasm, and so I just went ahead and wrote an equivalent C code:
+I couldn't run it with gcc or nasm, and so I just went ahead and wrote an equivalent C code:
 
 ```C
 #include<stdio.h>
