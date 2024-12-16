@@ -43,7 +43,7 @@ main:
         ret
 ```
 
-I couldn't make is run on gcc or nasm and so i again wrote an equivalent C code:
+I couldn't run this on gcc or nasm and so i again wrote an equivalent C code:
 
 ```C
 #include <stdio.h>
